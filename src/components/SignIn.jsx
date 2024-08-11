@@ -14,7 +14,7 @@ function SignIn({setUser}) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('/api/Sign', {
+      const response = await axios.post('https://api-jgpz.vercel.app/Sign', {
         email,
         password,
       });
