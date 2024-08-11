@@ -79,8 +79,9 @@ catch(err){
                      
           }
         });
-      
-        setCertificates(response.data.certificates);
+        setCertificates(response.data.certificates || []); // Fallback to an empty array if no certificates
+
+     
         // console.log(certificates[0].id)
 
         
