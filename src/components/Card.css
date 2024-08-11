@@ -1,0 +1,34 @@
+.cards {
+    display: flex;
+      
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    flex-direction: column;
+    width: 300px;
+    height: 320px;
+    margin: 20px;
+    background-color: #fff;
+    
+    
+  }
+  .card-flex{
+    display: flex;
+  }
+  
+  
+  .card-image {
+    margin: 20px;
+    width: 250px; 
+     
+  }
+  @media only screen and (max-width: 600px) {
+    .card-flex{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+ 
+  
+ 

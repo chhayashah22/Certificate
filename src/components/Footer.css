@@ -1,0 +1,35 @@
+.footer{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    
+    
+    justify-content: space-evenly;
+    background-color: #9aa5ae;
+    color: #FFFFFF; 
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.feedback {
+    margin-top: 60px;
+   
+  
+  }
+  
+  
+  
+  .star {
+    color: #f3efda; /* Gold color for stars */
+    font-size: 40px; /* Increased size of the stars */
+    cursor: pointer;
+  }
+  
+  .star:hover,
+  .star:hover ~ .star {
+    color: #FFA500; /* Orange color when hovered */
+  }
+  li{
+    list-style-type: none;
+  }

@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: Light Gray (#ECF0F1);
+color: Black (#2D2D2D);
+z-index: 1000;
+
+}
+
+* {
+  scrollbar-width: none; /* For Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+.Header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0.1, 0, 0.5);
+font-weight: bold;
+  color: black;
+  height:60px;
+  z-index: 1000;
+ 
+}
+#logout{
+  color: white;
+  bottom: 0;
+  position: absolute;
+}
+.logo-text{
+  font-family: 'Helvetica', sans-serif,'Montserrat'; /* Choose a font */
+    font-weight: bold; /* Or use 'normal' for lighter text */
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: black; /* Example color: Dark Blue */
+    
+ padding-top:20px;
+ color: #4bb1f5;
+   
+     
+}
+.logo-text span{
+  color:#0669ab ;
+}
+
+
+.sidebar{
+  background-color: hwb(201 36% 55%);
+  width:200px;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-top: 2px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a.active {
+  background-color: #9aa5ae; 
+  color: #ffffff; 
+  border-radius: 2px;
+}
+.sidebar ul li span{
+  font-size: 1rem;
+
+  
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  text-decoration: none;
+  color:white;
+
+  width: 100%;
+}
+
+
+
+
+
+.Profile-section {
+  display: flex;
+
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+  
+  z-index: 1; /* Ensure the profile section is behind the sidebar */
+}
+
+
+  
+ 
+
+
+
+
+.profile {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: absolute;
+    z-index: 2000;
+  
+  
+  transform: translateX(-100%); 
+  background-color: #ECF0F1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+  width: 120px; 
+  
+  list-style-type: none;
+padding: 10px;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #FFFFFF;
+}
+.page{
+  
+  display: flex;
+  
+  
+}
+
+.username{
+box-sizing: border-box;
+  width: 83vw;
+  margin:1%;
+  padding: 10px;
+  background: white;
+      height: 60px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+      
+      
+}
+
+.myname{
+  font-size: 1.5rem;
+  
+}
+.subscription{
+  margin-left: 60%;
+  
+
+}
+
+
+
+
+
+.visitors-section h2 {
+  color: #2C3E50; /* Dark Blue */
+  margin-bottom: 10px;
+}
+
+
+.visitors-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.visitors-table th,
+.visitors-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* Style for each table within the list item */
+table {
+  width: 60%; 
+  margin: 20px;
+  border-collapse: collapse; /* Collapse borders for margin-bottom: 20px; /* Spacing between tables */
+}
+
+/* Style for table headers */
+th {
+  background-color: #2773be; /* Dark Blue background */
+  color: #FFFFFF; /* White text */
+  padding: 10px; /* Padding for spacing */
+  text-align: left; /* Left-align text */
+}
+
+.toggle-btn,.close-btn{
+  display: none;
+}
+
+.Main-page {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .toggle-btn {
+    display: block; 
+    cursor: pointer;
+    padding: 3px;
+       color:#0669ab ;
+    ;
+    
+    
+    position: absolute;
+    top: 10px;
+    left: 10;
+  }
+  
+  .sidebar {   
+    background-color: rgb(5, 56, 72);
+    position: fixed;
+    top: 20;
+    left: 0;
+    
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .sidebar.open {
+    transform: translateX(0); 
+    width: 150px; 
+  }
+
+  
+
+  
+  .username{
+    
+      width: 100vw;
+    
+      
+      background: white;
+          height: 60px;
+          border-radius: 6px;
+          
+          
+          
+    }
+    .logo-text{
+      margin-left: 20px;
+      
+    }
+    .myname{
+      font-size: 1rem;
+     
+      
+    }
+    .subscription{
+      margin-left: 40%;
+      
+    
+    }
+  
+    table {
+      width: 80%; 
+      margin: 20px;
+      border-collapse: collapse; /* Collapse borders for margin-bottom: 20px; /* Spacing between tables */
+    }
+  
+
+}

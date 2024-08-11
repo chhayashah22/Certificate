@@ -1,0 +1,51 @@
+.charts-data{
+  display: flex;
+  justify-content: space-around;
+  
+}
+  
+  .my-calendar {
+    
+    border-radius: 8px; /* Rounded corners */    
+    padding: 20px; /* Padding around the calendar */
+   
+ 
+    
+ 
+  }
+  
+  
+  
+ 
+  
+  
+  .visitors-chart {
+    background-color: white;
+   
+    border-radius: 8px; /* Rounded corners */
+
+    padding: 10px; 
+
+    width: 600px; 
+    height: 300px; 
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .My-data{
+      
+      display: flex;      
+      flex-direction: column;
+
+    }
+    .charts-data{
+      display: flex;
+   flex-direction: column;
+      
+    }
+    .visitors-chart{
+      padding-top: 50px;
+      width: 350px;
+      height: 300px;
+    }
+
+  }

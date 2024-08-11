@@ -1,0 +1,28 @@
+
+.chart{
+    width: 550px;
+    height: 340px;
+     margin: 10px;
+      background: white;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+}
+.chart-data{
+    display: flex;
+  }
+
+  @media only screen and (max-width: 600px) {
+   .chart-data {
+    display: flex;
+    flex-direction: column;
+
+    }
+    .chart{
+        overflow-y: scroll;
+        width: 400px;
+        height: 300px;
+    }
+    
+}

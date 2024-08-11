@@ -1,0 +1,16 @@
+#input{
+    background-color: black;
+    height:40px;
+    width:80%;
+    margin: 20px;
+    padding: 8px;
+    border-color: aliceblue;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 60px;margin-left: 0px;
+    
+}

@@ -1,0 +1,109 @@
+/* GENERATE CERTIFICATE FORM CSS */ 
+  .box {
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+    .box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+   
+  /* Template CSS */
+ 
+    
+  .certificate {
+  width: 1056px;
+  height: 816px; 
+   border: 10px solid #e0e0e0;
+  margin: 0 auto; 
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+    
+    
+  }
+  
+  .certificate .header h1  {
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .img{
+    margin-left: 48%;
+    
+  }
+  
+ 
+  
+  .container2 {
+    display: flex;
+    justify-content: space-between; /* Distribute items to the corners */
+    height: 40%;
+    width: 100%;
+    position: relative;
+    
+    
+  }
+  .CID{
+    position:absolute;
+    bottom: 0;
+    left:0;
+  }
+  .sine{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+  }
+ 
+  
+  .button-container {
+    display: flex;
+    margin: 2%;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+  
+  }
+  
+  .button-container button {
+    background-color: #3498DB; /* Light Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    max-width: 200px; 
+  }
+  
+  .button-container button:hover {
+    background-color: #2980B9; /* Darker blue on hover */
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+    .button-container {
+      flex-direction: row; /* Align buttons in a row on larger screens */
+    }
+  }
+  
+ 
+  @media only screen and (max-width: 600px) {
+
+    .box{
+      width:100%;
+      margin: 10%;
+    }
+    
+  }
+  
+  
+  

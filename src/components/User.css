@@ -1,0 +1,22 @@
+.update-form {
+    position: fixed; /* Use fixed to make it stay in place relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+border-radius: 5px ;
+    background-color: white;
+    z-index: 1000; 
+    
+}
+
+.box2 {
+    position: absolute;
+    left: 40px; 
+    top: 40px; 
+}
+.close{
+    margin-left: 300px;
+}
