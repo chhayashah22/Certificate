@@ -19,9 +19,6 @@ import Navbar from './Navbar';
 
 
 
-
-
-
 const Admin = () => {  
   const cookies= new Cookies()
   const [certificates, setCertificates] = useState([]);
@@ -82,6 +79,7 @@ catch(err){
                      
           }
         });
+      
         setCertificates(response.data.certificates);
         // console.log(certificates[0].id)
 
