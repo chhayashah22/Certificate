@@ -1,6 +1,5 @@
 {
   "name": "vite-project",
-  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -18,7 +17,6 @@
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.3",
     "file-saver": "^2.0.5",
-    "gh-pages": "^6.1.1",
     "html2canvas": "^1.4.1",
     "jsonwebtoken": "^9.0.2",
     "jspdf": "^2.5.1",
