@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import CertificateTemplate from './CertificateTemplate';
 import html2canvas from 'html2canvas';
 import Sidebar from './SideBar';
-import jsPDF from 'jsPdf';
+import jsPDF from 'jspdf';
 import Cookies from 'universal-cookie';
 import Navbar from './Navbar';
 import Footer from './Footer';
