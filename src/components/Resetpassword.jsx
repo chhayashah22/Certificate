@@ -10,7 +10,7 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8083/Updatepassword', {
+      const response = await axios.post('/api/Updatepassword', {
         resetToken,
         newPassword,
       });
