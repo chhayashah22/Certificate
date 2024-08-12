@@ -14,10 +14,19 @@ function SignIn({setUser}) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://api-jgpz.vercel.app/Sign', {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        '/api/Sign',
+        {
+          email,
+          password,
+        },
+        {
+          headers: {
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          },
+        }
+      );
+  
       setEmail('');
       setPassword('');
 
