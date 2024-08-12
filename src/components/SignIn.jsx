@@ -29,8 +29,7 @@ function SignIn({setUser}) {
       
         setMessage('User-login success');        
         cookies.set('token', response.data.token);
-       
-console.log(response.data.user.name)
+       console.log(response.data.user.name)
       
         
         
@@ -43,7 +42,7 @@ console.log(response.data.user.name)
         if (error.response.status === 405) setMessage('User Not verified');
         if (error.response.status === 404) setMessage('User with this email not registered ');
         
-        else setMessage('Internal server error');
+        else setMessage('Internal server error',error);
       } else {
         setMessage('An error occurred. Please try again.');
       }
