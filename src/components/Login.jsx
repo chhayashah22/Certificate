@@ -55,7 +55,7 @@ const Register = () => {
     <div className='container-fluid'>
       
       
-      <form className="form" method='POST' onSubmit={handleSubmit}>
+      <form className="form"  onSubmit={handleSubmit}>
         <h2>Register Yourself</h2>
         
         <label htmlFor='name'>
