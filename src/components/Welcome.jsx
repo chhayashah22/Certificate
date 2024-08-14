@@ -1,5 +1,5 @@
 import React from "react";
-import template from '../images/img.jpg'; // Ensure the path is correct
+import template from '../assets/img2.jpg';
 
 export default function Welcome() {
     return (
@@ -14,7 +14,7 @@ export default function Welcome() {
             </div>
 
             <div className="auth-buttons">
-                <button className="btn-login">Login</button>
+
                 <button className="btn-signup">Signup</button>
             </div>
 
