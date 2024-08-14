@@ -1,6 +1,7 @@
 import React, { useState  } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
+import { reqUrl } from './Constant';
 
 function SignIn({setUser}) {
   const [email, setEmail] = useState('');
@@ -15,7 +16,7 @@ function SignIn({setUser}) {
     event.preventDefault();
     try {
       const response = await axios.post(
-        'https://api-ruddy-nine.vercel.app/Sign',
+        `${reqUrl}/Sign`,
         {
           email,
           password,
