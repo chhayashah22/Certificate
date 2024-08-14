@@ -2,7 +2,6 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
-
 import Box from './Box';
 import MyChart from './Chart';
 import { MdEdit } from "react-icons/md";
