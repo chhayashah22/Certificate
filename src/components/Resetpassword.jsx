@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { reqUrl } from './Constant';
 function ResetPassword() {
   const { resetToken } = useParams();
   const [newPassword, setNewPassword] = useState('');
@@ -10,7 +11,7 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/Updatepassword', {
+      const response = await axios.post(`${reqUrl}/Updatepassword`, {
         resetToken,
         newPassword,
       });

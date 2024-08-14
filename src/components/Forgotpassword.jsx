@@ -8,7 +8,7 @@ export default function Forgotpassword(){
 
     const Reset = async (event)=>{
         event.preventDefault();
-        const response= await axios.post("/api/resetPassword",{
+        const response= await axios.post(`${reqUrl}/resetPassword`,{
             email
          })
         setEmail('');

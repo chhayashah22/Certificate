@@ -22,7 +22,7 @@ const Register = () => {
       
     }
     try {
-      const response = await axios.post('https://api-ruddy-nine.vercel.app/form', {
+      const response = await axios.post(`${reqUrl}/form`, {
         name,
         email,
         password,

@@ -17,7 +17,7 @@ import { logout } from './Logout';
 import MyCalendar from './Calendar';
 import Navbar from './Navbar';
 
-
+import { reqUrl } from './Constant';
 
 const Admin = () => {  
   const cookies= new Cookies()
@@ -42,7 +42,7 @@ const Admin = () => {
  
     try{
      
-const response= await axios.get(`api/certificates/${id}`);
+const response= await axios.get(`${reqUrl}/certificates/${id}`);
 console.log(response.data);
 
 setSelect(response.data);
@@ -58,7 +58,7 @@ catch(err){
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('/api/get-subscription', {
+        const response = await axios.get(`${reqUrl}/get-subscription`, {
           headers: {
             'Authorization': token
           }
@@ -73,7 +73,7 @@ catch(err){
       
     const fetchCertificates = async () => {
       try {
-        const response = await axios.get('/api/certificates', {
+        const response = await axios.get(`${reqUrl}/certificates`, {
           headers: {
             'Authorization': token  
                      

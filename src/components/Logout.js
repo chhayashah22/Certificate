@@ -1,8 +1,4 @@
 
-
-
- 
-
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 
@@ -12,7 +8,7 @@ const token=cookies.get('token');
 export const logout = async () => {
 
   try {
-    await axios.post('/api/logout', { withCredentials: true });
+    await axios.post(`${reqUrl}/logout`, { withCredentials: true });
     cookies.remove('token');
     window.location.href = '/signin';
   } catch (err) {

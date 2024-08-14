@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Errormail from './Errormail';
 import Verified from './Verified';
+import { reqUrl } from './Constant';
 
 const VerifyEmail = () => {
   const [status, setStatus] = useState(null);
@@ -11,7 +12,7 @@ const VerifyEmail = () => {
   useEffect(() => {
     const verifyEmail = async () => {
       try {
-        const response = await axios.get(`/api/verify?token=${token}`);
+        const response = await axios.get(`${reqUrl}/verify?token=${token}`);
         setStatus('success');
         setMessage(response.data.message);
       } catch (error) {

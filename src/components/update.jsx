@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import './User.css'
 import { IoIosClose } from "react-icons/io";
+import { reqUrl } from "./Constant";
 
 export default function Update({ selected ,onclose}) {
   console.log(selected)
@@ -25,7 +26,7 @@ export default function Update({ selected ,onclose}) {
     try {
       console.log(selected._id)
       // Assuming you have an ID or some identifier to update the specific record
-      const response = await axios.put(`/api/certificates/${selected._id}`, {
+      const response = await axios.put(`${reqUrl}/certificates/${selected._id}`, {
         name,
         course,
         date,

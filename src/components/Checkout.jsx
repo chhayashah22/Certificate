@@ -6,6 +6,7 @@ import {
   useStripe, 
   useElements 
 } from '@stripe/react-stripe-js';
+import { reqUrl } from './Constant';
 import axios from 'axios';
 import './Checkout.css'; // Import your CSS file
 
@@ -58,7 +59,7 @@ console.log(userId);
 
     try {
       // Step 1: Create a customer
-      const customerResponse = await axios.post('/api/create-customer', {
+      const customerResponse = await axios.post(`${reqUrl}/create-customer`, {
         email: email,
       });
 
@@ -66,7 +67,7 @@ console.log(userId);
       console.log(customerResponse.data);
 
       // Step 2: Create a subscription
-      const subscriptionResponse = await axios.post('/api/create-subscription', {
+      const subscriptionResponse = await axios.post(`${reqUrl}/create-subscription`, {
         customerId: customerId,
         priceId: priceId,
         
@@ -86,7 +87,7 @@ console.log(userId);
       if (confirmError) {
         setError(confirmError.message);
       } else if (paymentIntent.status === 'succeeded') {
-        await axios.post('/api/update-subscription', {
+        await axios.post(`${reqUrl}/update-subscription`, {
           userId: userId, // Add the actual user ID
           subscriptionStatus: 'Active',
           planstatus:planstatus, // Update the plan status

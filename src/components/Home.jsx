@@ -9,7 +9,7 @@ import {jsPDF }from 'jspdf';
 import Cookies from 'universal-cookie';
 import Navbar from './Navbar';
 import Footer from './Footer';
-
+import { reqUrl } from './Constant';
 export default function Home() {
   const [name, setName] = useState('');
   const [course, setCourse] = useState('');
@@ -70,7 +70,7 @@ export default function Home() {
       const token = cookies.get('token');
       console.log('id', token);
 
-      const response = await axios.post('/api/submitform', formData, {
+      const response = await axios.post(`${reqUrl}/submitform`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: token,
@@ -93,7 +93,7 @@ export default function Home() {
     try {
       const token = cookies.get('token');
       console.log(id);
-      const response = await axios.post(`/api/certificates/${id}/generate`,
+      const response = await axios.post(`${reqUrl}/certificates/${id}/generate`,
         { certificateId: certificateId },
         {
           headers: {
