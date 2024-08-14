@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { reqUrl } from './Constant';
 export default function Forgotpassword(){
     
     
