@@ -1,1 +1,1 @@
-export const reqUrl='https://api-ruddy-nine.vercel.app'
+export const reqUrl='https://api-jgpz-git-main-chhayas-projects-d7e774f2.vercel.app'

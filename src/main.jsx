@@ -8,7 +8,7 @@ import ResetPassword from './components/Resetpassword';
 
 import Admin from './components/Admin';
 import App from './App';
-
+import Welcome from './components/Welcome';
 
 // Import Router components
 
@@ -46,29 +46,26 @@ const router = createBrowserRouter([
     element: <FreePlan />
   },
   {
-    path: "certificates",
+    path: "/certificates",
     element: <Certificates />
   },
 
 
   {
     path: "/", // Home route
-    element: <App />,
-    children: [
-      {
-        path: "Register",
-        element: <Register />,
-        children: [
+    element: <Welcome />,
+  },
+    {
+        path: "/Register",
+        element: <Register />},
+       
           {
-            path: "signin",
+            path: "/signin",
             element: <SignIn />
-          }
-        ]
-      },
-      {
-        path: "signin",
-        element: <SignIn />
-      },
+          },
+        
+      
+      
       {
         path: "verify/:token",
         element: <Error />
@@ -108,13 +105,13 @@ const router = createBrowserRouter([
         element: <Home />
       }
     ]
-  }
+  
+
+
+)
 
 
 
-
-
-])
 
 
 

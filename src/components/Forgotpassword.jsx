@@ -11,6 +11,9 @@ export default function Forgotpassword(){
         const response= await axios.post(`${reqUrl}/resetPassword`,{
             email
          })
+         if(response){
+            console.log("success");
+         }
         setEmail('');
         
 
