@@ -1,0 +1,131 @@
+/* General styles */
+.container-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-welcome p {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.container-welcome img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn-login, .btn-signup {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-signup {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Pricing Section */
+.pricing-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.pricing-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing-option {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Features Section */
+.features-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.feature {
+    margin-bottom: 15px;
+}
+
+/* Contact Us Section */
+.contact-us-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.contact-us-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us-section label {
+    margin: 5px 0;
+}
+
+.contact-us-section input, .contact-us-section textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-us-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container-welcome {
+        flex-direction: column;
+    }
+
+    .pricing-options {
+        flex-direction: column;
+    }
+
+    .pricing-option {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-login, .btn-signup {
+        width: 100%;
+        font-size: 14px;
+    }
+}

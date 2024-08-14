@@ -6,7 +6,6 @@ import { reqUrl } from './Constant';
 import { Link } from 'react-router-dom';
 
 
-
 const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
