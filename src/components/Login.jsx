@@ -22,7 +22,7 @@ const Register = () => {
       
     }
     try {
-      const response = await axios.post('/api/form', {
+      const response = await axios.post('https://api-ruddy-nine.vercel.app/form', {
         name,
         email,
         password,
@@ -55,7 +55,7 @@ const Register = () => {
     <div className='container-fluid'>
       
       
-      <form className="form"  onSubmit={handleSubmit}>
+      <form className="form" method='POST' onSubmit={handleSubmit}>
         <h2>Register Yourself</h2>
         
         <label htmlFor='name'>

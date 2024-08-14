@@ -15,16 +15,12 @@ function SignIn({setUser}) {
     event.preventDefault();
     try {
       const response = await axios.post(
-        '/api/Sign',
+        'https://api-ruddy-nine.vercel.app/Sign',
         {
           email,
           password,
-        },
-        {
-          headers: {
-            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-          },
         }
+        
       );
   
       setEmail('');
