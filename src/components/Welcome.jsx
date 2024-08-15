@@ -11,8 +11,6 @@ export default function Welcome() {
 
     return (
         <>
-
-
             <div className="Header">
                 <div className='logo'><h2 className='logo-text'>.Certify<span>Xpert</span></h2></div>
                 <div><Link to="/signin"><span>Login</span></Link>

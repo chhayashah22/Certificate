@@ -10,7 +10,7 @@ function ResetPassword() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if ( password.length < 8) {
+    if ( newPassword.length < 8) {
       setMessage('Password is at least 8 characters long.');
       return;
     } 
