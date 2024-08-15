@@ -1,58 +1,67 @@
 import React from "react";
-import template from '../assets/img2.jpg';
+
+
+import './Welcome.css';
+import template from '../assets/img.jpg';
+
 
 export default function Welcome() {
+    
+
+    
     return (
         <>
-            <div className="container-welcome">
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati eos possimus, dolor illo, facilis quia esse et repellat laborum quos autem consequatur dignissimos, necessitatibus architecto excepturi expedita! Id, tempora!</p>
+                    
+         
+                <div className="Header">
+                    <div className='logo'><h2 className='logo-text'>.Certify<span >Xpert</span></h2></div>
+                    <div><button className="btn-login">Login</button>
+                    <button className="btn-signup">Signup</button></div>
                 </div>
+                <div className="container-welcome">
+                    <div className=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis tempore earum amet necessitatibus ducimus animi, consequuntur ullam soluta repellat voluptatem nemo eum beatae, autem quisquam sapiente quod neque consequatur.</p></div>
                 <div>
-                    <img src={template} alt="Welcome" />
+                   <img src={template}/>
                 </div>
             </div>
 
-            <div className="auth-buttons">
-
-                <button className="btn-signup">Signup</button>
-            </div>
+            
 
             <div className="pricing-section">
                 <h2>Pricing</h2>
                 <div className="pricing-options">
                     <div className="pricing-option">
-                        <h3>Basic Plan</h3>
-                        <p>$10/month</p>
-                        <ul>
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                        </ul>
+                    <h2>Base Plan</h2>
+      <p>$9.99 / month</p>
+      <ul>
+        <li>100 certificates per month</li>
+        <li>Standard templates</li>
+        <li>Email and chat support</li>
+      </ul>
                     </div>
                     <div className="pricing-option">
                         <h3>Pro Plan</h3>
-                        <p>$25/month</p>
-                        <ul>
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
+                        <p>$19.99 / month</p>
+      <ul>
+        <li>Unlimited certificates</li>
+        
+        <li>Priority support</li>
+      </ul>
                     </div>
                     <div className="pricing-option">
-                        <h3>Enterprise Plan</h3>
-                        <p>$50/month</p>
-                        <ul>
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                            <li>Feature 4</li>
-                        </ul>
+                    <h2>Free Plan</h2>
+      <p>$0 / month</p>
+      <ul>
+        <li>10 certificates per month</li>
+        <li>Basic templates</li>
+        <li>Email support</li>
+      </ul>
                     </div>
                 </div>
             </div>
 
             <div className="features-section">
-                <h2>Features</h2>
+                
                 <div className="feature">
                     <h3>Manual Feature</h3>
                     <p>Details about the manual feature.</p>
@@ -77,6 +86,7 @@ export default function Welcome() {
 
                     <button type="submit">Send</button>
                 </form>
+                
             </div>
         </>
     );
