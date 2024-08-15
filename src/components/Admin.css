@@ -18,7 +18,6 @@ z-index: 1000;
   display: none; /* For Chrome, Safari, and Edge */
 }
 
-
 .Header {
   width: 100vw;
   display: flex;
@@ -28,8 +27,7 @@ z-index: 1000;
   padding-right: 20px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0.1, 0, 0.5);
-font-weight: bold;
-  color: black;
+
   height:60px;
   z-index: 1000;
  
@@ -111,8 +109,6 @@ font-weight: bold;
 
   
  
-
-
 
 
 .profile {
@@ -235,9 +231,7 @@ th {
     display: block; 
     cursor: pointer;
     padding: 3px;
-       color:#0669ab ;
-    ;
-    
+      color:#0669ab ;   
     
     position: absolute;
     top: 10px;

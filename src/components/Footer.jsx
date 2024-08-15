@@ -11,9 +11,7 @@ export default function(){
           <ul>
             <li>
               <Link to="/Admin">
-              
-
-                <span>Dashboard</span>
+          <span>Dashboard</span>
                 
               </Link>
             </li>
@@ -24,8 +22,7 @@ export default function(){
               </Link>
             </li>
             <li>
-              <Link to="/Home">
-            
+              <Link to="/Home">            
                 <span>Editor</span>
                 
               </Link>
@@ -33,8 +30,17 @@ export default function(){
             </ul>
          </div>
          <div>
-         
-            <li>
+          <li>
+         <Link to="/Batch">
+             
+             <span>Batch</span>
+           </Link>
+         </li>
+         <Link to="/plandetails">
+         <span>Upgrade</span></Link>
+                      
+
+                  <li>
               <Link to="/Contact">
              
 
@@ -42,19 +48,10 @@ export default function(){
                 
               </Link>
             </li>
-            <li>
-              <Link to="/Batch">
+           
              
-                <span>Batch</span>
-              </Link>
-            </li>
-            <Link to="/plandetails">
-            <span>Upgrade</span></Link>
-            
-              
-            
-
           
+          </div>
           </div>
           <div><h6>Feedback</h6>
           <span class="star-rating">
@@ -65,7 +62,7 @@ export default function(){
     <span class="star">&#9733;</span>
   </span></div>
   <h6 className="feedback">&copy; 2024 Certify. All rights reserved.</h6>
-          </div>
+          
         
       
 </>

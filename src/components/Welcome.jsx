@@ -59,18 +59,17 @@ export default function Welcome() {
                     </div>
 
                 </div>
-            </div><h4>Manual Creation</h4>
+            </div>
 
             <div className="features-section">
                 <div className="feature">
+                <h4>Manual Creation</h4>
                     
                     <p>Design your certificate from scratch with our intuitive editor. Customize every detail to meet your needs             
                 
                     <p>Download as PNG as well as PDF</p>
                     Save your completed certificate as a high-quality PNG image</p>
-                
-    
-                    
+                                
                
                 
                     
@@ -83,6 +82,24 @@ export default function Welcome() {
                 <p>You can download easily all certificates</p>
             </div>
             </div >
+           
+      <div className="footer-content">
+        <div className="footer-section contact-us">
+          <h3>Contact Us</h3>
+          <p>support@certifyxpert.com</p>
+          <p> +91987526655</p>
+        </div>
+        <div className="footer-section social-links">
+          
+          <a href="https://linkeln.com" target="_blank" rel="noopener noreferrer">LinkedLn</a>
+          <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">Mail</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; 2024 CertifyXpert. All rights reserved.</p>
+      </div>
+ 
 
             
            

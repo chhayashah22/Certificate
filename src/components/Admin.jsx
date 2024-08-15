@@ -15,7 +15,6 @@ import Footer from './Footer';
 import { logout } from './Logout';
 import MyCalendar from './Calendar';
 import Navbar from './Navbar';
-
 import { reqUrl } from './Constant';
 
 const Admin = () => {  
@@ -25,8 +24,7 @@ const Admin = () => {
   const [subscription, setSubscription] = useState({});
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [select,setSelect]=useState('')
-  
-  const [userName, setUserName] = useState('');
+    const [userName, setUserName] = useState('');
 
   useEffect(() => {
     const storedUserName = localStorage.getItem('user');
@@ -126,12 +124,15 @@ catch(err){
       <div><Sidebar/></div>
       <div>
           <div className='username'>
-            <span className='myname'>Welcome,{userName}</span>
-            <span className='subscription'>Plan : {subscription.plan} /</span>
+          {userName ? (
+        <span className='myname'>Welcome, {userName}</span>
+      ) : (
+        <span className='myname'>Welcome, Guest</span>
+      )}
+            <span className='subscription'> Plan : {subscription.plan} /</span>
             <span> Status: {subscription.status}</span>
            
-         
-         
+                
             
             
           </div>

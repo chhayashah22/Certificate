@@ -2,12 +2,12 @@ import React, { useState  } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import { reqUrl } from './Constant';
-
+import { useNavigate } from 'react-router-dom';
 function SignIn({setUser}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState(''); 
-  
+  const navigate = useNavigate();
   const cookies = new Cookies();
 
    
@@ -33,7 +33,9 @@ function SignIn({setUser}) {
       localStorage.setItem('user', user.name); 
       localStorage.setItem('userId',user.id)// Optiona    
       
-        setMessage('User-login success');        
+        setMessage('User-login success');
+        navigate('/admin');
+
         cookies.set('token', response.data.token);
        console.log(response.data.user.name)
       
@@ -72,6 +74,7 @@ function SignIn({setUser}) {
           <a href="Forgotpassword" target="_blank">Forgot Password</a>
           <br></br>
           {message && <p>{message}</p>}
+
           {/* <button>Continue with Google</button> */}
         </form>
        

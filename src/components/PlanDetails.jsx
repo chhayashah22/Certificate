@@ -16,8 +16,7 @@ const PlanDetails = () => {
     
     <div className="plan-details">
     
-   
-      <div><ul>
+        <div><ul>
         <li>
           <h3>Base Plan</h3>
           <p>$9.99 / month</p>

@@ -16,7 +16,6 @@ const BasePlan = () => {
     <div className='page'>
       <div><Sidebar/></div>
     <div className="plan">
-    
       <h2>Base Plan</h2>
       <p>$9.99 / month</p>
       <ul>

@@ -73,6 +73,8 @@ const Register = () => {
         <Link to="/signin"><p>If already Registered then</p></Link>
         <p className='message'>{message}</p>
         
+        
+        
       </form>
       
       

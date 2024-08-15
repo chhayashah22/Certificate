@@ -1,8 +1,7 @@
 /* PlanDetails.css */
 
 .plan-details {
-    
-   
+       width: 80vw;
     padding: 40px;
     
     border-radius: 8px;
@@ -35,12 +34,12 @@
   
   /* Container for the plan section */
 .plan {
-  background-color: #ffffff; /* White background for the plan section */
+  background-color: #ffffff; 
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   padding: 20px; /* Padding inside the container */
   margin: 20px auto; /* Center container with auto margin */
-  max-width: 400px; /* Max width of the container */
+width: 30vw;
   text-align: center; 
 
 }
@@ -102,4 +101,12 @@
   width: 100%;
   
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+@media only screen and (max-width: 600px) {
+  .plan-details{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
