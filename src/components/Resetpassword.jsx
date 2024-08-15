@@ -10,6 +10,10 @@ function ResetPassword() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if ( password.length < 8) {
+      setMessage('Password is at least 8 characters long.');
+      return;
+    } 
     try {
       const response = await axios.post(`${reqUrl}/Updatepassword`, {
         resetToken,
@@ -25,8 +29,7 @@ function ResetPassword() {
   };
 
   return (
-    <div className='container'>
-      
+    <div className='container'>      
       <form onSubmit={handleSubmit}>
       <h1>Reset Password</h1>
         <label>New Password:</label>

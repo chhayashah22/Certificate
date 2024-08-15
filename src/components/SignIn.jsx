@@ -44,9 +44,9 @@ function SignIn({setUser}) {
       }
     } catch (error) {
       if (error.response) {
-        if (error.response.status === 400) setMessage('Password Incorrect');
-        if (error.response.status === 405) setMessage('User Not verified');
-        if (error.response.status === 404) setMessage('User with this email not registered ');
+        if (error.response.status == 400) setMessage('Password Incorrect');
+        if (error.response.status == 405) setMessage('User Not verified');
+        if (error.response.status == 404) setMessage('User with this email not registered ');
         
         else setMessage('Internal server error',error);
       } else {

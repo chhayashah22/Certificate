@@ -35,7 +35,7 @@ export default function(){
          <div>
          
             <li>
-              <Link to="/">
+              <Link to="/Contact">
              
 
                 <span>Contact us</span>
@@ -53,7 +53,7 @@ export default function(){
             
               
             
-          <h6 className="feedback">&copy; 2024 Certify. All rights reserved.</h6>
+
           
           </div>
           <div><h6>Feedback</h6>
@@ -64,6 +64,7 @@ export default function(){
     <span class="star">&#9733;</span>
     <span class="star">&#9733;</span>
   </span></div>
+  <h6 className="feedback">&copy; 2024 Certify. All rights reserved.</h6>
           </div>
         
       

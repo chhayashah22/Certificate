@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 import './Welcome.css';
-import template from '../assets/img.jpg';
+import template from '../assets/img2.jpg';
 
 
 export default function Welcome() {
@@ -14,9 +14,9 @@ export default function Welcome() {
                     
          
                 <div className="Header">
-                    <div className='logo'><h2 className='logo-text'>.Certify<span >Xpert</span></h2></div>
-                    <div><button className="btn-login">Login</button>
-                    <button className="btn-signup">Signup</button></div>
+                    <div className='logo'><h2 className='logo-text'>.Certify<span>Xpert</span></h2></div>
+                    <div><Link to="/signin"><button className="btn-login">Login</button></Link>
+                    <Link to ="/Register"><button className="btn-signup">Signup</button></Link></div>
                 </div>
                 <div className="container-welcome">
                     <div className=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis tempore earum amet necessitatibus ducimus animi, consequuntur ullam soluta repellat voluptatem nemo eum beatae, autem quisquam sapiente quod neque consequatur.</p></div>
