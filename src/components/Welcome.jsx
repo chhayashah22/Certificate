@@ -15,11 +15,11 @@ export default function Welcome() {
          
                 <div className="Header">
                     <div className='logo'><h2 className='logo-text'>.Certify<span>Xpert</span></h2></div>
-                    <div><Link to="/signin"><button className="btn-login">Login</button></Link>
-                    <Link to ="/Register"><button className="btn-signup">Signup</button></Link></div>
+                    <div><Link to="/signin"><span>Login</span></Link>
+                    <Link to ="/Register"><span>Signup</span></Link></div>
                 </div>
                 <div className="container-welcome">
-                    <div className=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis tempore earum amet necessitatibus ducimus animi, consequuntur ullam soluta repellat voluptatem nemo eum beatae, autem quisquam sapiente quod neque consequatur.</p></div>
+                    <div className=""><p>Welcome to our Certificate Generator website </p></div>
                 <div>
                    <img src={template}/>
                 </div>
@@ -28,10 +28,19 @@ export default function Welcome() {
             
 
             <div className="pricing-section">
-                <h2>Pricing</h2>
+                
                 <div className="pricing-options">
+                <div className="pricing-option">
+                    <h3>Free Plan</h3>
+      <p>$0 / month</p>
+      <ul>
+        <li>10 certificates per month</li>
+        <li>Basic templates</li>
+        <li>Email support</li>
+      </ul>
+                    </div>
                     <div className="pricing-option">
-                    <h2>Base Plan</h2>
+                    <h3>Base Plan</h3>
       <p>$9.99 / month</p>
       <ul>
         <li>100 certificates per month</li>
@@ -48,21 +57,12 @@ export default function Welcome() {
         <li>Priority support</li>
       </ul>
                     </div>
-                    <div className="pricing-option">
-                    <h2>Free Plan</h2>
-      <p>$0 / month</p>
-      <ul>
-        <li>10 certificates per month</li>
-        <li>Basic templates</li>
-        <li>Email support</li>
-      </ul>
-                    </div>
+                    
                 </div>
             </div>
 
             <div className="features-section">
-                
-                <div className="feature">
+                     <div className="feature">
                     <h3>Manual Feature</h3>
                     <p>Details about the manual feature.</p>
                 </div>
@@ -72,22 +72,8 @@ export default function Welcome() {
                 </div>
             </div>
 
-            <div className="contact-us-section">
-                <h2>Contact Us</h2>
-                <form>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
-
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-                
-            </div>
+            
+           
         </>
     );
 }
