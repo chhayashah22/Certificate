@@ -21,8 +21,6 @@ import ProPlan from './components/Pro';
 import BasePlan from './components/Base';
 import FreePlan from './components/Free';
 
-import Verified from './components/Verified';
-
 import Certificates from './components/Certificates';
 
 
@@ -66,15 +64,8 @@ const router = createBrowserRouter([
         
       
       
-      {
-        path: "verify/:token",
-        element: <Error />
-
-      },
-      {
-        path: "verified",
-        element: <Verified />
-      },
+     
+      
       {
         path: "Forgotpassword",
         element: <Forgotpassword />
