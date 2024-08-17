@@ -1,6 +1,6 @@
 import React from 'react';
 import './Welcome.css';
-import template from '../assets/img.png';
+import template from '../assets/img4.png';
 import { FaInstagram ,FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 

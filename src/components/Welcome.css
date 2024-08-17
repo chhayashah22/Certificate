@@ -185,18 +185,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 14px;
   color: #666; /* Optional: adjust color to match your design */
 }
-.github {
-  color: #333; /* Original color for GitHub */
-}
-
-.instagram {
-  color: #E4405F; /* Original color for Instagram */
-}
-
-.linkedin {
-  color: #0077B5; /* Original color for LinkedIn */
-}
-
 
 
 @media (max-width: 480px) {
