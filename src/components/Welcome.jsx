@@ -1,6 +1,6 @@
 import React from 'react';
 import './Welcome.css';
-import template from '../assets/img2.jpg';
+import template from '../assets/img.png';
 import { FaInstagram ,FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -12,9 +12,9 @@ export default function Welcome() {
                 <div className='logo'>
                     <h2 className='logo-text'>.Certify<span>Xpert</span></h2>
                 </div>
-                <div>
+              
                     <Link to="/Siginin"><span>Login|</span></Link><Link to="/register"><span>Signup</span></Link>
-                </div>
+                
             </div>
             <div className="container-welcome">
                 <div className="text">
@@ -30,7 +30,7 @@ export default function Welcome() {
             </div>
             
                 <div className="pricing-options">
-                <h2>Our Plans</h2>
+                
                   
                     <div className="pricing-option">
                         <h3>Free Plan</h3>
@@ -62,7 +62,7 @@ export default function Welcome() {
         
            
             <div className="features-section">
-            <h2>Features</h2>
+            
                 <div className="feature1">
                 <div className="feature2-heading"><h3>Manual Creation</h3></div>
                     <p>Design your certificate from scratch with our intuitive editor Customize your detail to meet your needs.</p>
