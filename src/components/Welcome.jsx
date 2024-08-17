@@ -1,6 +1,6 @@
 import React from 'react';
 import './Welcome.css';
-import template from '../assets/img4.png';
+import template from '../assets/img.png';
 import { FaInstagram ,FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,9 @@ export default function Welcome() {
                     <h2 className='logo-text'>.Certify<span>Xpert</span></h2>
                 </div>
               
-                    <Link to="/Siginin"><span>Login|</span></Link><Link to="/register"><span>Signup</span></Link>
+                <span class="login-signup-links">
+  <Link to="/Signin">Login</Link> | <Link to="/register">Signup</Link>
+</span>
                 
             </div>
             <div className="container-welcome">
@@ -34,7 +36,7 @@ export default function Welcome() {
                   
                     <div className="pricing-option">
                         <h3>Free Plan</h3>
-                        <p>$0 / month</p>
+                       
                         <ul>
                             <li>10 certificates per month</li>
                             <li>Basic templates</li>
@@ -43,7 +45,7 @@ export default function Welcome() {
                     </div>
                     <div className="pricing-option">
                         <h3>Base Plan</h3>
-                        <p>$9.99 / month</p>
+                     
                         <ul>
                             <li>100 certificates per month</li>
                             <li>Standard templates</li>
@@ -52,7 +54,7 @@ export default function Welcome() {
                     </div>
                     <div className="pricing-option">
                         <h3>Pro Plan</h3>
-                        <p>$19.99 / month</p>
+                       
                         <ul>
                             <li>Unlimited certificates</li>
                             <li>Priority support</li>
@@ -77,18 +79,19 @@ export default function Welcome() {
                 </div>
             </div>
             <div className="contact-us">
-    <h2>Contact Us</h2>
+   
     
     <div className="social-links">
+        <div>
         <a href="https://github.com" target="_blank" className="social-link">
             <FaGithub style={{ color: '#333', fontSize: '34px' }} />
-        </a>
-        <a href="https://instagram.com" target="_blank" className="social-link">
+        </a></div>
+        <div><a href="https://instagram.com" target="_blank" className="social-link">
             <FaInstagram style={{ color: '#E4405F', fontSize: '34px' }} />
-        </a>
-        <a href="https://linkedin.com" target="_blank" className="social-link">
+        </a></div>
+       <div> <a href="https://linkedin.com" target="_blank" className="social-link">
             <FaLinkedin style={{ color: '#0077B5', fontSize: '34px' }} />
-        </a>
+        </a></div>
     </div>
     <div className="rights"><h6 className="feedback">&copy; 2024 Certify. All rights reserved.</h6></div>
     

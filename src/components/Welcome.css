@@ -15,12 +15,16 @@
   width:30vw;
   
 }
+.login-signup-links {
+  display: inline-flex;
+  gap: 10px; 
+}
 
 
 
 .text h4 {
-  font-size: 2em;
-  color: #333;
+  font-size: 1 em;
+ 
   margin-bottom: 10px;
   animation: fadeInUp 1s ease-out;
   font-weight: bold;
@@ -28,12 +32,10 @@
 }
 
 .container-welcome p {
-  font-size: 1.2em;
-  color: #555;
+
   margin-bottom: 10px;
   
-
-  animation: fadeInUp 1.5s ease-out 0.5s; /* Adding delay for sequential animation */
+  animation: fadeInUp 1.5s linear 0.5s; 
 }
 
 .image-container img {
@@ -124,7 +126,7 @@
   padding: 20px;
   height:auto;
 border-radius: 5px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
   
 }
 .feature1{
@@ -133,7 +135,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   animation: moveRight 1s linear;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
   height: 300px;
   
 }
@@ -163,7 +165,12 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .social-links {
-  margin-bottom: 20px;
+  width:40vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+ 
+  
 }
 
 .social-links a {
@@ -206,6 +213,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   
     
   }
+ 
 }
 
 

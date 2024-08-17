@@ -5,15 +5,14 @@ import { Link } from "react-router-dom";
 export default function(){
     return(
         <>
-       
+       <div className="footer-section">
         <div className='footer'> 
           <div>
           <ul>
             <li>
               <Link to="/Admin">
           <span>Dashboard</span>
-                
-              </Link>
+                 </Link>
             </li>
             <li>
               <Link to="/certificates">
@@ -31,27 +30,18 @@ export default function(){
          </div>
          <div>
           <li>
-         <Link to="/Batch">
-             
+         <Link to="/Batch">             
              <span>Batch</span>
            </Link>
          </li>
          <Link to="/plandetails">
          <span>Upgrade</span></Link>
-                      
-
-                  <li>
-              <Link to="/Contact">
-             
-
-                <span>Contact us</span>
-                
-              </Link>
-            </li>
-           
-             
+         <Link to="/About us"><span>About us</span></Link>
+                            
           
-          </div>
+            </div> 
+          
+         
           </div>
           <div><h6>Feedback</h6>
           <span class="star-rating">
@@ -63,7 +53,7 @@ export default function(){
   </span></div>
   <h6 className="feedback">&copy; 2024 Certify. All rights reserved.</h6>
           
-        
+        </div>
       
 </>
     )

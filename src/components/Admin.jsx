@@ -32,9 +32,7 @@ const Admin = () => {
       setUserName(storedUserName);
     }
   }, []);
-
-
-  
+ 
  const handleClick=async(id)=>{
  
     try{

@@ -1,23 +1,21 @@
 /* Base styles for the footer */
+.footer-section{
+  background-color: hwb(195 25% 71%);
+  list-style-type: none;
+}
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  background-color: hwb(197 50% 47%);
+
 
 }
 
-.footer > div {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+
 
 .footer ul li{
-  list-style-type: none;
+
   padding: 0;
   margin: 5px 0px;
 }

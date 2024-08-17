@@ -35,7 +35,7 @@ const ProPlan = () => {
       
       
       </div>
-      <div></div>
+      
     </>
   );
 };
