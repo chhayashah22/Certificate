@@ -2,6 +2,7 @@ import React from 'react';
 import './Welcome.css';
 import template from '../assets/img2.jpg';
 import { FaInstagram ,FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 export default function Welcome() {
