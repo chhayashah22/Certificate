@@ -12,7 +12,7 @@ const VerifyEmail = () => {
   useEffect(() => {
     const verifyEmail = async () => {
       try {
-        const response = await axios.get(`${reqUrl}/verify?token=${token}`);
+        const response = await axios.get(`${reqUrl}/verify/${token}`);
         setStatus('success');
         setMessage(response.data.message);
       } catch (error) {
@@ -23,12 +23,14 @@ const VerifyEmail = () => {
 
     verifyEmail();
   }, [token]);
+
   if (status === 'success') {
     return <Verified />;
   } else if (status === 'error') {
     return <Errormail message={message} />;
   }
-  
+
+  return <p>Loading...</p>; // Optional: loading state while waiting for verification
 };
 
 export default VerifyEmail;

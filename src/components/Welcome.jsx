@@ -1,35 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React from 'react';
 import './Welcome.css';
 import template from '../assets/img2.jpg';
+import { FaInstagram ,FaGithub, FaLinkedin } from 'react-icons/fa';
 
 
 export default function Welcome() {
-
-
-
     return (
         <>
             <div className="Header">
-                <div className='logo'><h2 className='logo-text'>.Certify<span>Xpert</span></h2></div>
-                <div><Link to="/signin"><span>Login</span></Link>
-                    <Link to="/Register"><span>Signup</span></Link></div>
-            </div>
-            <div className="container-welcome">
-                <div className=""><h2>Welcome to our Certificate Generator website </h2> <p>Create Professional Certificates in Minutes</p>
-                    <p>Design, customize, and generate certificates quickly and easily with our intuitive tool.</p>
+                <div className='logo'>
+                    <h2 className='logo-text'>.Certify<span>Xpert</span></h2>
                 </div>
                 <div>
-                    <img src={template} />
+                    <Link to="/Siginin"><span>Login|</span></Link><Link to="/register"><span>Signup</span></Link>
                 </div>
             </div>
+            <div className="container-welcome">
+                <div className="text">
+                    <h4> Certificate Generator </h4>
+                    <p>Create Professional Certificates in Minutes
+                    Design, customize, and generate certificates quickly and easily with our intuitive tool.</p>
+               
+                </div>
+                <div className="image-container">
 
-
-
-            <div className="pricing-section">
-
+                    <img src={template} alt="Certificate template" />
+                </div>
+            </div>
+            
                 <div className="pricing-options">
+                <h2>Our Plans</h2>
+                  
                     <div className="pricing-option">
                         <h3>Free Plan</h3>
                         <p>$0 / month</p>
@@ -53,56 +54,45 @@ export default function Welcome() {
                         <p>$19.99 / month</p>
                         <ul>
                             <li>Unlimited certificates</li>
-
                             <li>Priority support</li>
                         </ul>
                     </div>
-
                 </div>
-            </div>
-
+        
+           
             <div className="features-section">
-                <div className="feature">
-                <h4>Manual Creation</h4>
-                    
-                    <p>Design your certificate from scratch with our intuitive editor. Customize every detail to meet your needs             
-                
-                    <p>Download as PNG as well as PDF</p>
-                    Save your completed certificate as a high-quality PNG image</p>
-                                
-               
-                
-                    
-                    <p>Modify your certificates anytime. Revisit and update them whenever you need to make changes.</p>
+            <h2>Features</h2>
+                <div className="feature1">
+                <div className="feature2-heading"><h3>Manual Creation</h3></div>
+                    <p>Design your certificate from scratch with our intuitive editor Customize your detail to meet your needs.</p>
+                    <p>Download as PNG as well as PDF.</p>
+                    <p>Modify your certificates anytime.</p>
                 </div>
-           
-            <div className="feature">
-                <h3>Batch Creation</h3>
-                <p>You can generate Multiple Certificates by simply uploading a File</p>
-                <p>You can download easily all certificates</p>
+                <div className="feature2">
+                    <div className="feature2-heading"><h3>Batch Creation</h3></div>
+                    <p>You can generate multiple certificates by simply uploading a file.</p>
+                    <p>Download as PNG as well as PDF.</p>
+                    <p>You can download all certificates easily.</p>
+                </div>
             </div>
-            </div >
-           
-      <div className="footer-content">
-        <div className="footer-section contact-us">
-          <h3>Contact Us</h3>
-          <p>support@certifyxpert.com</p>
-          <p> +91987526655</p>
-        </div>
-        <div className="footer-section social-links">
-          
-          <a href="https://linkeln.com" target="_blank" rel="noopener noreferrer">LinkedLn</a>
-          <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">Mail</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 CertifyXpert. All rights reserved.</p>
-      </div>
- 
+            <div className="contact-us">
+    <h2>Contact Us</h2>
+    
+    <div className="social-links">
+        <a href="https://github.com" target="_blank" className="social-link">
+            <FaGithub style={{ color: '#333', fontSize: '34px' }} />
+        </a>
+        <a href="https://instagram.com" target="_blank" className="social-link">
+            <FaInstagram style={{ color: '#E4405F', fontSize: '34px' }} />
+        </a>
+        <a href="https://linkedin.com" target="_blank" className="social-link">
+            <FaLinkedin style={{ color: '#0077B5', fontSize: '34px' }} />
+        </a>
+    </div>
+    <div className="rights"><h6 className="feedback">&copy; 2024 Certify. All rights reserved.</h6></div>
+    
+</div>
 
-            
-           
         </>
     );
 }
