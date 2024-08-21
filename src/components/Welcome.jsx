@@ -21,7 +21,7 @@ export default function Welcome() {
             <div className="container-welcome">
                 <div className="text">
                     <h4> Certificate Generator </h4>
-                    <p>Create Professional Certificates in Minutes
+                    <p className='welcome-text'>Create Professional Certificates in Minutes
                     Design, customize, and generate certificates quickly and easily with our intuitive tool.</p>
                
                 </div>

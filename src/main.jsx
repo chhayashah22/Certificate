@@ -23,7 +23,7 @@ import FreePlan from './components/Free';
 
 import Certificates from './components/Certificates';
 
-
+import VerifyEmail from './components/Verifymail';
 
 // Define routes
 const router = createBrowserRouter([
@@ -66,10 +66,7 @@ const router = createBrowserRouter([
       
      
       
-      {
-        path: "Forgotpassword",
-        element: <Forgotpassword />
-      },
+     
       {
         path: "Forgotpassword",
         element: <Forgotpassword />
@@ -94,7 +91,13 @@ const router = createBrowserRouter([
       {
         path: "Home",
         element: <Home />
+      },
+      {
+        path:"verify/:token",
+        element:<VerifyEmail/>
+
       }
+
     ]
   
 
