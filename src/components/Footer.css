@@ -1,7 +1,8 @@
 /* Base styles for the footer */
 .footer-section{
-  background-color: hwb(195 25% 71%);
+  background-color: hwb(204 34% 64%);
   list-style-type: none;
+
 }
 .footer {
   display: flex;
@@ -12,7 +13,9 @@
 
 }
 
-
+ul li{
+  list-style-type: none;
+}
 
 .footer ul li{
 
@@ -21,7 +24,11 @@
 }
 
 
-
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .footer a {
   text-decoration: none;
   color: white
@@ -34,6 +41,7 @@
 .footer .feedback {
   margin-top: 20px;
   text-align: center;
+  color:white;
 }
 
 .star-rating {

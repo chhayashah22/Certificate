@@ -23,7 +23,7 @@
 
 
 .text h4 {
-  font-size: 2em;
+  font-size: 1.5 em;
  
   margin-bottom: 10px;
   animation: fadeInUp 1s ease-out;
@@ -31,11 +31,12 @@
   color:#0669ab ;
 }
 
-.container-welcome .welcome-text{
-font-size: 30px;
+.container-welcome p {
+  font-size: 25px;
+
   margin-bottom: 10px;
   
-  animation: fadeInUp 1.5s linear 1s; 
+  animation: fadeInUp 1.5s linear 0.5s; 
 }
 
 .image-container img {
