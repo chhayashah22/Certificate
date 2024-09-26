@@ -43,7 +43,7 @@ export default function(){
           
          
           </div>
-          <div className="footer-content"><h6>Feedback</h6>
+          <div className="footer-content"><h6 className="feedback">Feedback</h6>
           <span class="star-rating">
     <span class="star">&#9733;</span>
     <span class="star">&#9733;</span>
