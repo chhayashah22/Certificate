@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 import Cookies from 'universal-cookie';
-
+import { reqUrl } from './Constant';
 
 const cookies= new Cookies();
 const token=cookies.get('token');
